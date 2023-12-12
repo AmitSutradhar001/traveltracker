@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+      .transparent-button {
+        background-color: transparent;
+        border: 2px solid #fff;
+        color: #fff;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 26px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        outline: none;
+      }
+
+      .transparent-button:hover {
+        background-color: #0e4ed8;
+        color: #000;
+      }
+
+      #login-btn {
+        margin-right: 20px;
+      }
+      a {
+        color: #fff;
+      }
+      h1 {
+        margin: 20px;
+        font-size: 50px;
+        color: #17b0db;
+      }
+    </style>
+  </head>
+  <body>
+    <video autoplay muted loop>
+      <source src="/videos/universe.mp4" type="video/mp4" />
+    </video>
+    <h1>Welcome To My <span style="color: #fff">Travel Tracker</span> !</h1>
+
+    <div class="form">
+      <button id="login-btn" class="transparent-button">
+        <a href="/login"> Login </a>
+      </button>
+      <button id="signup-btn" class="transparent-button">
+        <a href="/signup"> Signup </a>
+      </button>
+    </div>
+  </body>
+</html>

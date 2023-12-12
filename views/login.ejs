@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joke App</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+
+  <body id="app">
+    <h1>user:amit@gmail.com</h1>
+    <h1>password:amit@gmail.com</h1>
+    <form class="container" action="/login" method="post">
+      <div class="horizontal-container">
+        <h3>Take only pictures, leave only footprints.</h3>
+      </div>
+
+      <h1 id="countryName">LogIn</h1>
+      <div class="answer-container">
+        <input
+          type="text"
+          name="email"
+          id="userName"
+          placeholder="Enter The-Email"
+          autofocus
+          autocomplete="on"
+        />
+        <input
+          type="password"
+          name="password"
+          id="userPassword"
+          placeholder="Enter The Password"
+          autofocus
+          autocomplete="off"
+        />
+      </div>
+      <p><%= locals.para %></p>
+      <button type="submit">SUBMIT</button>
+      <a href="/signup">New User</a>
+    </form>
+  </body>
+</html>
