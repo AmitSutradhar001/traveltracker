@@ -43,7 +43,7 @@ async function visited(user) {
 }
 
 app.get("/", (req, res) => {
-  res.render("home");
+  res.render("root");
 });
 
 app.get("/login", (req, res) => {
